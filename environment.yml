@@ -1,0 +1,15 @@
+name: carlane
+dependencies:
+  - pytorch::pytorch=1.6.0
+  - pytorch::torchvision=0.7.0
+  - cudatoolkit=9.2
+  - conda-forge::opencv
+  - conda-forge::matplotlib
+  - pip:
+      - gdown
+      - p_tqdm
+      - lxml
+      - ujson
+      - PyYAML==5.3.1
+      - tqdm==4.43.0
+      - imgaug==0.4.0

@@ -1,0 +1,16 @@
+# Model settings
+seed: 0
+model:
+  name: LaneATT
+  path: 'weights/lane/culane_res122.pt' # pretrained-model path
+  parameters:
+    backbone: resnet122
+    S: 72
+    topk_anchors: 1000
+    anchors_freq_path: 'weights/lane/culane_anchors_freq.pt' # frequent anchors used for lane detection
+    img_h: 360
+    img_w: 640
+test_parameters:
+  conf_threshold: 0.3  # confidence threshold
+  nms_thres: 100. # non-maximum-suppression threshold
+  nms_topk: 4

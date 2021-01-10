@@ -1,0 +1,11 @@
+# Model settings
+seed: 0
+
+model:
+  weights: 'weights/car/yolov3.weights'  # pre-trained weights path
+  type: 'car_detector/yolov3.cfg'  # model configuration type path
+
+classes: 'car_detector/coco.names' # path to CoCo-class-label file
+conf_thres: 0.6  # object detection confidence threshold
+nms_thres: 0.6  # non-maximal-suppression threshold
+im_size: 640   # test image size
